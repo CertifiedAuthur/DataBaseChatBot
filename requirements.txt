@@ -6,4 +6,4 @@ langchain
 streamlit
 faiss-cpu
 openai
-chromdb
+chromadb
