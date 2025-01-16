@@ -1,5 +1,25 @@
+# Ignore the Streamlit config directory
 .streamlit/
+
+# Ignore the virtual environment directory
 venv/
+
+# Ignore the SQLite database file
 database.db
-test
+database1.db
+
+# Ignore Python bytecode files (compiled .pyc files)
 __pycache__/
+
+# Ignore individual Python test file (if you have one)
+test.py
+
+# Optional: Ignore IDE-related files
+.vscode/
+.idea/
+
+# Optional: Ignore log files
+*.log
+
+# Optional: Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
