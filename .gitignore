@@ -1,0 +1,5 @@
+.streamlit/
+venv/
+database.db
+test
+_pycache_/
