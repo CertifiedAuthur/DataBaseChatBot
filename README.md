@@ -39,7 +39,7 @@ pip install streamlit langchain openai huggingface chromadb pydantic toml
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/repositoryname.git
+   git clone https://github.com/CertifiedAuthur/DataBaseChatBot.git
    cd repositoryname
    ```
 
@@ -90,9 +90,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to submit issues, fork the repository, and create pull requests. All contributions are welcome!
 
 ---
-
-### Customization:
-- You can replace `repositoryname` and other placeholders in the README with your actual repository details.
-- The project can be expanded to include other types of databases or NLP models if needed.
-
-Let me know if you need additional adjustments!
