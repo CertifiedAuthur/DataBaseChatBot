@@ -21,8 +21,8 @@ def get_few_shot_db_chain(api_key: str):
         return None
     
     # MySQL database credentials
-    db_user = "root"
-    db_password = "6877"
+    db_user = " "
+    db_password = " "
     db_host = "localhost"
     db_name = "machine_test"
 
