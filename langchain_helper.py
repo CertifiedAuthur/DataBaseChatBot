@@ -15,10 +15,14 @@ from pydantic import BaseModel
 def get_few_shot_db_chain(api_key: str):
     # Initialize OpenAI with the provided API key
     openai = OpenAI(api_key=api_key)
+    
+    # MySQL database credentials
+    db_user = "root"
+    db_password = "6877"
+    db_host = "localhost"
+    db_name = "machine_test"
 
-    # No need for password or host for SQLite3
-    db_path = "database1.db"
-    db = SQLDatabase.from_uri(f"sqlite:///{db_path}", sample_rows_in_table_info=3)
+    db = SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}", sample_rows_in_table_info=3)
     print("Database connected successfully")
 
     embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
