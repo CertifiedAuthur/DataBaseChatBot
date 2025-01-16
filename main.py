@@ -1,3 +1,4 @@
+import time
 import streamlit as st
 from langchain_helper import get_few_shot_db_chain
 
@@ -16,7 +17,10 @@ api_key = st.sidebar.text_area("Paste your OpenAI API Key below:", height=150)
 # Store the API key in session state once pasted
 if api_key:
     st.session_state["OPENAI_API_KEY"] = api_key
-    st.success("API Key has been set successfully!")
+    placeholder = st.empty()
+    placeholder.success("API Key has been set successfully!")
+    time.sleep(5)
+    placeholder.empty()
 
 # Text input to capture the user's question
 st.session_state["question"] = st.text_input("Enter your question:", value=st.session_state["question"])
