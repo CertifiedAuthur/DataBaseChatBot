@@ -4,10 +4,6 @@
 # Ignore the virtual environment directory
 venv/
 
-# Ignore the SQLite database file
-database.db
-database1.db
-
 # Ignore Python bytecode files (compiled .pyc files)
 __pycache__/
 
