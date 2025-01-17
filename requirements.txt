@@ -9,4 +9,3 @@ openai
 chromadb
 pymysql 
 sqlalchemy
-google-cloud
